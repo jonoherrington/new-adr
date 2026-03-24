@@ -1,0 +1,13 @@
+# Shell must be LF for Linux/macOS CI and Git Bash
+*.sh text eol=lf
+
+# YAML / GitHub Actions
+*.yml text eol=lf
+.github/**/*.yml text eol=lf
+
+# Default: let Git normalize; PS1 often fine as LF in repo too
+*.ps1 text eol=lf
+
+*.md text eol=lf
+LICENSE text eol=lf
+.gitignore text eol=lf

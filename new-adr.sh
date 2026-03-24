@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# new-adr — create a numbered Architecture Decision Record under docs/adr/
+# new-adr - create a numbered Architecture Decision Record under docs/adr/
 # Usage: ./new-adr.sh "Title of the decision"
 
 set -e
