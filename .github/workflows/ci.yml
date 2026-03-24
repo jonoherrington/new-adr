@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  bash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Edge tests (bash)
+        run: bash test/test-new-adr-edge.sh
+
+  powershell:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Edge tests (PowerShell)
+        shell: pwsh
+        run: pwsh -NoProfile -File test/test-new-adr-edge.ps1

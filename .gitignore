@@ -1,0 +1,6 @@
+# Ephemeral lock from concurrent runs (safe to delete if a run crashed)
+/docs/adr/.new-adr.lock/
+
+# OS / editor
+.DS_Store
+Thumbs.db
